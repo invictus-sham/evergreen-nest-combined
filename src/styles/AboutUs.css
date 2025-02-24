@@ -1,0 +1,171 @@
+.about-container {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.about-banner {
+  background: linear-gradient(to right, #4caf50, #81c784);
+  padding: 50px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.about-banner h1 {
+  font-size: 2.5rem;
+}
+
+.about-banner p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  padding: 20px;
+}
+
+.about-content h2 {
+  color: #2e7d32;
+  margin-top: 20px;
+}
+
+.about-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-content li {
+  background: #e8f5e9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* Feedback Form */
+.feedback-section {
+  margin-top: 40px;
+  padding: 20px;
+  background: #f1f8e9;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 100px;
+}
+
+.feedback-section h2 {
+  color: #2e7d32;
+}
+
+.success-message {
+  color: #388e3c;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  max-width: 500px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #388e3c;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-banner {
+    padding: 30px;
+  }
+
+  .about-banner h1 {
+    font-size: 2rem;
+  }
+
+  .about-banner p {
+    font-size: 1rem;
+  }
+
+  .about-content {
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .feedback-section {
+    padding: 15px;
+  }
+
+  input, textarea {
+    max-width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-banner {
+    padding: 20px;
+  }
+
+  .about-banner h1 {
+    font-size: 1.8rem;
+  }
+
+  .about-banner p {
+    font-size: 0.9rem;
+  }
+
+  .about-content h2 {
+    font-size: 1.4rem;
+  }
+
+  .feedback-section {
+    padding: 10px;
+  }
+
+  input, textarea {
+    font-size: 0.9rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+}
