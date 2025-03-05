@@ -14,6 +14,9 @@ import AboutUs1 from "./pages/AboutUs1"
 import Subscription from "./pages/Subscription";
 import FAQ from "./pages/FAQ";
 import TrackOrder from "./pages/TrackOrder";
+import Testimonials from "./pages/Testimonials";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
 import Header from "./pages/Header";
 import Footer from "./pages/Footer";
 import "./styles.css";
@@ -35,6 +38,9 @@ function App() {
           <Route path="/aboutus1" element= {<AboutUs1/>}/>
           <Route path="/subscription" element= {<Subscription/>}/>
           <Route path="/track-order" element= {<TrackOrder/>}/>
+          <Route path="/testimonials" element= {<Testimonials/>}/>
+          <Route path="/terms" element= {<Terms/>}/>
+          <Route path="/privacy" element= {<Privacy/>}/>
           <Route path="/faq" element= {<FAQ/>}/>
         </Routes>
         <CartIndicator />

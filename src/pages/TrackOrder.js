@@ -23,26 +23,28 @@ const TrackOrder = () => {
   };
 
   return (
-    <div className="track-order-container">
-      <h1>📦 Track Your Order</h1>
-      <input
-        type="text"
-        className="track-order-input"
-        placeholder="Enter Order ID"
-        value={orderId}
-        onChange={(e) => setOrderId(e.target.value)}
-      />
-      <button className="track-order-button" onClick={handleTrackOrder}>
-        Track Order
-      </button>
+    <div className="track-order">
+      <div className="track-order-container">
+        <h1>📦 Track Your Order</h1>
+        <input
+          type="text"
+          className="track-order-input"
+          placeholder="Enter Order ID"
+          value={orderId}
+          onChange={(e) => setOrderId(e.target.value)}
+        />
+        <button className="track-order-button" onClick={handleTrackOrder}>
+          Track Order
+        </button>
 
-      {trackingResult && (
-        <div className="tracking-result">
-          <p><strong>Order ID:</strong> {trackingResult.orderId}</p>
-          <p className="tracking-status"><strong>Status:</strong> {trackingResult.status}</p>
-          <p><strong>Estimated Delivery:</strong> {trackingResult.estimatedDelivery}</p>
-        </div>
-      )}
+        {trackingResult && (
+          <div className="tracking-result">
+            <p><strong>Order ID:</strong> {trackingResult.orderId}</p>
+            <p className="tracking-status"><strong>Status:</strong> {trackingResult.status}</p>
+            <p><strong>Estimated Delivery:</strong> {trackingResult.estimatedDelivery}</p>
+          </div>
+        )}
+      </div>
     </div>
   );
 };

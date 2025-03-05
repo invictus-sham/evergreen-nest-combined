@@ -39,6 +39,15 @@ const Header = () => {
           <li>
             <Link to="/track-order" className={location.pathname === "/track-order" ? "active" : ""}>Track Order</Link>
           </li>
+          <li>
+            <Link to="/testimonials" className={location.pathname === "/testimonials" ? "active" : ""}>Testimonials</Link>
+          </li>
+          <li>
+            <Link to="/terms" className={location.pathname === "/terms" ? "active" : ""}>Terms</Link>
+          </li>
+          <li>
+            <Link to="/privacy" className={location.pathname === "/privacy" ? "active" : ""}>Privacy</Link>
+          </li>
         </ul>
       </nav>
     </header>

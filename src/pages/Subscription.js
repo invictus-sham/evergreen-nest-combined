@@ -15,6 +15,7 @@ const Subscription = () => {
   };
 
   return (
+    <div className="subscription-bg">
     <div className="subscription-container">
       <h1>🌿 Choose Your Subscription Plan</h1>
       <p>Bring home fresh plants every month & get expert gardening tips! 🌱</p>
@@ -55,6 +56,7 @@ const Subscription = () => {
           ✅ You have selected the <strong>{selectedPlan}</strong> plan. Enjoy your plants! 🌿
         </p>
       )}
+    </div>
     </div>
   );
 };

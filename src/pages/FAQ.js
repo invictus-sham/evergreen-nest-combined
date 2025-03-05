@@ -45,6 +45,7 @@ const FAQ = () => {
   );
 
   return (
+    <div className="faq-bg">
     <div className={`faq-container ${darkMode ? "dark" : ""}`}>
       <div className="faq-header">
         <h1>🌿 Frequently Asked Questions</h1>
@@ -81,6 +82,7 @@ const FAQ = () => {
           <p className="no-results">No matching questions found. 😔</p>
         )}
       </div>
+    </div>
     </div>
   );
 };
